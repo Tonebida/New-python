@@ -1,0 +1,12 @@
+a = int(input('Enter А:'))
+b = int(input('Enter B:'))
+c = int(input('Enter C:'))
+D = b ** 2 - 4 * a * c
+
+if D < 0:
+    print('D < 0')
+elif D == 0:
+    print('x1=x2=',-(b/(2 * a)))
+else:
+    print('x1=',(-b + (b ** 2 - 4 * a * c) ** 0.5) / (2 * a))
+    print('x2=',(-b - (b ** 2 - 4 * a * c) ** 0.5) / (2 * a))
